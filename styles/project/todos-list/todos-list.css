@@ -1,0 +1,71 @@
+.todos-list {
+}
+.todos-list_item {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 13px;
+    padding-bottom: 0px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color:#f0f0f0;
+    height: 50px; 
+}
+.todos-list_item:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.todos-list_item_ready-marker {
+    float: left;
+    margin-right: 16px;
+}
+.todos-list_item_text-w {
+    overflow: hidden;
+}
+.todos-list_item_text {
+    border: none;
+    background: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: 25px;
+    font-family: HelveticaNeueLight, Arial, sans-serif;
+    color: #888888;
+}
+
+.item-remove {
+    float: right;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    padding-top: 7px;
+}
+.custom-remove {
+    position: absolute;
+    width:17px;
+    height: 17px;
+    opacity: 0;
+}
+.remove_visual {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    opacity: 1;
+}
+.todos-list_item:hover .remove_visual {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background: url(../../../images/close.png);
+    opacity: 1;
+}
+.todos-list_item:hover {
+    background-color: #fbfbfb;
+    cursor: pointer;
+} 
+.todos-list_item:hover .custom-checkbox_visual {
+    background-color: white;
+}
+.todos-list_item:hover .todos-list_item_text {
+    cursor: pointer;
+}  

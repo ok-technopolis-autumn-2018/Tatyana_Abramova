@@ -1,0 +1,13 @@
+.todos-toolbar{
+	background: #fff;
+}
+.todos-toolbar_unready-counter {
+	color: #888888;
+}
+.todos-toolbar_clear-completed {
+	color: #888888;
+}
+.filters-item {
+	color: #888888;
+}
+
